@@ -1,0 +1,8 @@
+synchronous rotation is ~ 24.8364706645 radians per year for this case
+2.1 = 52.15658839545
+
+
+figure out units for inertia tensor: seem to be M_sun * AU ^2
+
+"The Q coefficient in the tidal model can then be calculated (k2 = Q/(1 − Q))" -- from implementation paper
+k2 = 1.5 (we used) --> Q = 1.5/2.5 = 0.6

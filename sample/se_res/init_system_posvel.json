@@ -1,0 +1,88 @@
+{
+    "body": [
+        {
+            "Q": -1.0,
+            "mass": 1.0,
+            "name": "Star",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 695700.0,
+            "rigid": false,
+            "time_lag": -1.0,
+            "velocity": [
+                0.0,
+                -3.266880994034084e-07,
+                0.0
+            ]
+        },
+        {
+            "Q": 0.6,
+            "angular_velocity": [
+                0.0,
+                0.0,
+                36.15658839545
+            ],
+            "euler_angles": [
+                1.6580627893946132,
+                0.0,
+                0.0
+            ],
+            "inertia_tensor": [
+                2.89068735e-14,
+                2.8907162568735e-14,
+                2.8935780373499995e-14
+            ],
+            "mass": 1.201092e-05,
+            "name": "Planet",
+            "position": [
+                0.4,
+                0.0,
+                0.0
+            ],
+            "radius": 12756.273999999998,
+            "rigid": true,
+            "symmetric": false,
+            "time_lag": 0.00020131013,
+            "velocity": [
+                0.0,
+                0.02719925695978396,
+                0.0
+            ]
+        }
+    ],
+    "current_time": 0.0,
+    "output_format": {
+        "Eheat": false,
+        "Ftf": false,
+        "Hamiltonian": false,
+        "axial_tilt": true,
+        "axis": true,
+        "customize": false,
+        "momentum": false,
+        "obliquity": true,
+        "orbital_elements": true,
+        "position": false,
+        "spin": true,
+        "velocity": false
+    },
+    "parameters": {
+        "GR": false,
+        "coordinates": "central",
+        "output_gaps": 50000,
+        "potential_order": 2,
+        "save_interval": 50000.0,
+        "scheme": "M42",
+        "step_size": 0.001,
+        "tide": true
+    },
+    "system_name": "se_res",
+    "tidal_pairs": {
+        "Planet": [
+            "Star"
+        ],
+        "Star": []
+    }
+}

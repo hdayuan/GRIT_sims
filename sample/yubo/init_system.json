@@ -1,0 +1,45 @@
+{
+    "system_name": "twinkle",
+        "body":[
+        { "name":"TSun", "rigid": false, "mass":1.0, "position": [0.0, 0.0, 0.0], "velocity": [0.0, 0.0, 0.0], "radius":695700.0},
+        {
+            "name":"b",
+            "rigid": true,
+            "mass": 6.0e-06,
+            "orbital_elements": [0.4218, 0.0, 0.0, 0.0, 0.0, 0.0],
+            "center_mass": 1.0,
+            "angular_velocity": [0, 0, 76.4977811149],
+            "euler_angles": [1.745, 0, 0],
+            "radius":12713.5046,
+            "inertia_tensor":[1.09172e-14, 1.09173e-14, 1.09227e-14],
+            "Q": 0.25,
+            "time_lag":0.00013689253
+        }
+    ],
+    "current_time": 0.000,
+    "parameters":{
+        "tide"            : true,
+        "GR"              : false,
+        "step_size"       : 0.0005,
+        "save_interval"   : 100.0,
+        "output_gaps"     : 300,
+        "potential_order" : 2,
+        "coordinates"     : "central",
+        "scheme"          : "W42"
+    },
+    "tidal_pairs": {
+        "b": ["TSun"]
+    },
+    "output_format": {
+        "orbital_elements": true,
+        "position": false,
+        "velocity": false,
+        "axis": true,
+        "spin": true,
+        "obliquity": true,
+        "axial_tilt": true,
+        "Hamiltonian": false,
+        "momentum": false,
+        "customize": false
+    }
+}
