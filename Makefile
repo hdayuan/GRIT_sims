@@ -8,6 +8,10 @@ clean:
 	rm -f ./sample/test/current_system.json
 	rm -rf ./sample/test/data_in_mat
 
+clean_data:
+	rm -rf ./se_res/data/2body_data/
+	rm -rf errors.txt output.txt
+
 grid:
 	python3 runner.py > output.txt 2> errors.txt
 

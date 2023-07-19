@@ -28,15 +28,6 @@ def integrate_sim(dir_path, trial_num_dec, omega, theta, triax):
     os.system("./bin/simulate ./se_res/trial_"+str(trial_num_dec))
 
     # extract data
-    n_out = int((tf // step) + 1)
-    if len(ps) == 3:
-        val_names = ["ix","iy","iz","jx","jy","jz","kx","ky","kz","si","sj","sk","omega","rx","ry","rz","vx","vy","vz","rpx","rpy","rpz","t"] # r is vector from planet to star !
-    else:
-        val_names = ["ix","iy","iz","jx","jy","jz","kx","ky","kz","si","sj","sk","omega","rx","ry","rz","vx","vy","vz","t"] # r is vector from planet to star !
-    inds = {val_names[i]:i for i in range(len(val_names))}
-    nv = len(val_names)
-    out_data = np.zeros((nv,n_out), dtype=np.float64)
-    out_data = np.zeros((nv,n_out), dtype=np.float64)
 
     data = np.loadtxt('/Users/henryyuan/Documents/Github/GRIT_sims/se_res/trial_'+str(trial_num_dec)+'/data_in_mat/Planet', skiprows=1).T
     # t, rx, ry, rz, vx, vy, vz, ax, ay, az, sx, sy, sz, axt = dat
@@ -57,7 +48,7 @@ def integrate_sim(dir_path, trial_num_dec, omega, theta, triax):
     secs = int((int_time % 3600) % 60)
     print(f"Trial {trial_num_dec} completed in {hrs} hours {mins} minutes {secs} seconds.", flush=True) 
 
-def run_sim(trial_num):
+def run_sim(trial_num, n_trials=50):
 
     # max_omega = 4. # 2 because otherwise obliquity is excited # (1+(np.pi/2/np.arctan(1/Q_tide)))
     # omega_to_n = max_omega*np.random.default_rng().uniform()
