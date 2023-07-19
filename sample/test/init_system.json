@@ -8,10 +8,10 @@
             "mass": 1.201092E-05,
             "orbital_elements": [ 0.4, 0.0, 0.0, 0.0, 0.0, 0.0 ], 
             "center_mass": 1.0,
-            "angular_velocity": [ 0.0, 0.0, 36.15658839545 ], 
-            "euler_angles": [ 1.6580627893946132 , 0.0 , 0.0 ],
+            "angular_velocity": [ 0.0, 0.0, 24 ], 
+            "euler_angles": [ 0.0 , 0.0 , 0.0 ],
             "radius": 12756.274,
-            "inertia_tensor":[2.89068735e-14, 2.8907162568735e-14, 2.8935780373499995e-14],
+            "inertia_tensor":[2.89068735e-14, 2.89068735e-14 , 2.8935780373499995e-14],
             "Q": 0.6,
             "time_lag": 0.00020131013
         }
@@ -21,8 +21,8 @@
         "tide"            : true,
         "GR"              : false,
         "step_size"       : 0.001,
-        "save_interval"   : 50000.0,
-        "output_gaps"     : 50000.0,
+        "save_interval"   : 2529822.12813,
+        "output_gaps"     : 252982.2128134704,
         "potential_order" : 2,
         "coordinates"     : "central",
         "scheme"          : "M42"

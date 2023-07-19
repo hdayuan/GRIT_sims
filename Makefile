@@ -1,12 +1,12 @@
 run:
-	./bin/simulate sample/se_res
+	./bin/simulate sample/test
 plot:
-	python3 ./sample/se_res/plot.py
+	python3 plot.py
 clean:
-	rm -f ./sample/se_res/init_system_posvel.json
-	rm -f ./sample/se_res/data_tmp.json
-	rm -f ./sample/se_res/current_system.json
-	rm -rf ./sample/se_res/data_in_mat
+	rm -f ./sample/test/init_system_posvel.json
+	rm -f ./sample/test/data_tmp.json
+	rm -f ./sample/test/current_system.json
+	rm -rf ./sample/test/data_in_mat
 
 runt:
 	./bin/simulate sample/sun_earth_moon
