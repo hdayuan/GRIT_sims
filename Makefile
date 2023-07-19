@@ -8,6 +8,9 @@ clean:
 	rm -f ./sample/test/current_system.json
 	rm -rf ./sample/test/data_in_mat
 
+grid:
+	python3 runner.py > output.txt 2> errors.txt
+
 runt:
 	./bin/simulate sample/sun_earth_moon
 plott:
