@@ -58,6 +58,8 @@ def run_sim(trial_num, n_trials=50):
     theta = thetas[trial_num//2]
     base_moment = 2.89068735e-14
 
+    print("Checkpoint A")
+
     # make output directory and file
     dir_path = "./se_res/data/2body_data"
     if trial_num == 0:
@@ -68,6 +70,8 @@ def run_sim(trial_num, n_trials=50):
     else:
         while (not os.path.exists(dir_path)):
             time.sleep(1)
+
+    print("Checkpoint B")
 
     ### RUN SIMULATION ###
     triax = 1.00001*base_moment
