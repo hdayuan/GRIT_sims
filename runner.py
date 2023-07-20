@@ -29,7 +29,7 @@ def integrate_sim(dir_path, trial_num_dec, omega, theta, triax):
 
     # extract data
 
-    data = np.loadtxt('/Users/henryyuan/Documents/Github/GRIT_sims/se_res/trial_'+str(trial_num_dec)+'/data_in_mat/Planet', skiprows=1).T
+    data = np.loadtxt('./se_res/trial_'+str(trial_num_dec)+'/data_in_mat/Planet', skiprows=1).T
     # t, rx, ry, rz, vx, vy, vz, ax, ay, az, sx, sy, sz, axt = dat
     # omegas = np.sqrt(sx**2 + sy**2 + sz**2)
     # year = 0.4**(3/2)
