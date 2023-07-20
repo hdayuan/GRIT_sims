@@ -1,3 +1,4 @@
 se_res/data/
 se_res/plots/
 pull_data.sh
+bin/
