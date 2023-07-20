@@ -5,7 +5,7 @@ Copyright (c) 2021, [Renyi Chen, Gongjie Li, Molei Tao]. All rights reserved.
 */
 
 #include "system.hpp"
-#include "/usr/local/opt/libomp/include/omp.h"
+#include <omp.h>
 
 namespace rb_sim {
 
