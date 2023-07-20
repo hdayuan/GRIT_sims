@@ -11,6 +11,7 @@ clean:
 clean_data:
 	rm -rf ./se_res/data/2body_data/
 	rm -rf errors.txt output.txt
+	rm -rf ./se_res/trial_*
 
 grid:
 	python3 runner.py > output.txt 2> errors.txt

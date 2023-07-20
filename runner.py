@@ -20,9 +20,9 @@ def integrate_sim(dir_path, trial_num_dec, omega, theta, triax):
 
     # edit copy of input file
     file="./se_res/trial_"+str(trial_num_dec)+"/init_system.json"
-    os.system("sed -i '' \"s/omega/"+omg_in+"/\" "+file)
-    os.system("sed -i '' \"s/theta/"+tht_in+"/\" "+file)
-    os.system("sed -i '' \"s/triax/"+trx_in+"/\" "+file)
+    os.system("sed -i \"s/omega/"+omg_in+"/\" "+file) # add back '' between -i and \"s/..." for personal computer
+    os.system("sed -i \"s/theta/"+tht_in+"/\" "+file)
+    os.system("sed -i \"s/triax/"+trx_in+"/\" "+file)
 
     # run simulation
     os.system("./bin/simulate ./se_res/trial_"+str(trial_num_dec))
